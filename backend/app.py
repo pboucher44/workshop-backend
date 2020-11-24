@@ -12,8 +12,8 @@ def hello_word():
 def create():
     nbMot = request.args.get('nbMot', None)
     text = request.args.get('text', None)
-    #get_prediction(nbMot, text)
     print (text)
+    #return  get_prediction(nbMot, text)
     return 'success', 200
 
 app.run()
