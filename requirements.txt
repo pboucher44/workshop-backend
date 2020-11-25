@@ -1,1 +1,1 @@
-pip install flask-heroku
+Flask==0.8
