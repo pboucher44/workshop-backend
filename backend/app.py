@@ -9,11 +9,19 @@ def hello_word():
 
 
 @app.route('/api/create/', methods=['POST'])
-def create():
-    nbMot = request.args.get('nbMot', None)
+def createWithPost():
+    nbMot = request.args.get('nb', None)
     text = request.args.get('text', None)
     print (text)
     #return  get_prediction(nbMot, text)
     return 'success', 200
 
-app.run()
+@app.route('/api/create/', methods=['GET'])
+def createWithGet():
+    nbMot = request.args.get('nb', None)
+    text = request.args.get('text', None)
+    print (nbMot)
+    #return  get_prediction(nbMot, text)
+    return 'success', 200
+
+#app.run()
