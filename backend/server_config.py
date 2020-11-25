@@ -4,5 +4,5 @@ from app import *
 
 app.debug = False
 #host = os.environ.get('IP', 'O.O.O.O')
-port = int(os.environ.get('PORT', 8080))
-app.run(port=port)
+port = int(os.environ.get("PORT", 5000))
+app.run(host='0.0.0.0', port=port)
