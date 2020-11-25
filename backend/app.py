@@ -13,9 +13,9 @@ def hello_word():
 def createWithPost():
     nbMot = request.args.get('nb', None)
     text = request.args.get('text', None)
-    data = []
+    data = ''
     for i in range(int(nbMot)):
-        data.append(text)
+        data = data + ' ' + text
 
     response = app.response_class(
         response= json.dumps(data),
