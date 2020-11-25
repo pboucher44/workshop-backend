@@ -1,1 +1,1 @@
-web: python server_config.py
+web: python backend/server_config.py
