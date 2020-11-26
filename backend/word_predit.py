@@ -8,7 +8,7 @@ import random
 
 # Load the model and tokenizer
 
-model = load_model('model/nextword1.h5')
+model = load_model('https://drive.google.com/file/d/19nxybYJAqW_yt2NivGdMq2SWjdveB4wu/view?usp=sharing')
 tokenizer = pickle.load(open('tokens/tokenizer1.pkl', 'rb'))
 
 def Predict_Next_Words(model, tokenizer, text):
